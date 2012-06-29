@@ -1,0 +1,1699 @@
+/*========================================
+	POTATO - FONT
+========================================*/
+
+@font-face {font-family: 'PotatoCutTTRegular';src: url('potact__-webfont.eot');src: url('potact__-webfont.eot?#iefix') format('embedded-opentype'), url('potact__-webfont.woff') format('woff'),url('potact__-webfont.ttf') format('truetype'),url('potact__-webfont.svg#PotatoCutTTRegular') format('svg');font-weight: normal;font-style: normal;}
+
+/*========================================
+	NORMALIZE CSS
+========================================*/
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}audio,canvas,video{display:inline-block;*display:inline;*zoom:1}audio:not([controls]){display:none}[hidden]{display:nthe-game}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}html,button,input,select,textarea{font-family:sans-serif;color:#222}body{margin:0;font-size:1em;}a{color:#00e}a:visited{color:#551a8b}a:hover{color:#06e}a:focus{outline:thin dotted}a:hover,a:active{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}blockquote{margin:1em 40px}dfn{font-style:italic}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}ins{background:#ff9;color:#000;text-decoration:nthe-game}mark{background:#ff0;color:#000;font-style:italic;font-weight:bold}pre,code,kbd,samp{font-family:monospace,serif;_font-family:'courier new',monospace;font-size:1em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:nthe-game}q:before,q:after{content:"";content:nthe-game}small{font-size:85%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}ul,ol{margin:1em 0;padding:0 0 0 40px}dd{margin:0 0 0 40px}nav ul,nav ol{list-style:nthe-game;list-style-image:nthe-game;margin:0;padding:0}img{border:0;-ms-interpolation-mode:bicubic;vertical-align:middle}svg:not(:root){overflow:hidden}figure{margin:0}form{margin:0}fieldset{border:0;margin:0;padding:0}label{cursor:pointer}legend{border:0;*margin-left:-7px;padding:0;white-space:normal}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle}button,input{line-height:normal}button,input[type="button"],input[type="reset"],input[type="submit"]{cursor:pointer;-webkit-appearance:button;*overflow:visible}button[disabled],input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;*width:13px;*height:13px}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-decoration,input[type="search"]::-webkit-search-cancel-button{-webkit-appearance:nthe-game}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top;resize:vertical}input:valid,textarea:valid{}input:invalid,textarea:invalid{background-color:#f0dddd}table{border-collapse:collapse;border-spacing:0}td{vertical-align:top}.chromeframe{margin:0.2em 0;background:#ccc;color:black;padding:0.2em 0}*{ margin: 0; padding: 0; border: 0; resize:none; outline:none;}  
+
+/* Style CSS
+
+
+/* ================================================
+	DEFAULT SETTINGS
+=================================================*/
+
+#home-body {
+	width: 6000px;
+	height: 4950px;
+	overflow: hidden;
+	position: relative;
+}
+#main {
+	width: inherit;
+	height: inherit;
+	position: relative;
+}
+#the-game, #campaign, #enjoy, #record, #home {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+#the-game {width: 3008px; height: 2480px; background: #c0d92a; z-index: 400;}
+#the-game .center {top: 880px; margin: 41px 0 0 -700px; overflow: auto;}
+#the-game .border-right {width: 206px; height: 2174px; background: url(../img/green-corner-right.png) 0 0 no-repeat; position:relative; left: 3008px; z-index: 400;	}
+#the-game .border-bottom { width: 3022px; height: 834px; background: url(../img/green-corner-bottom.gif) 0 0 no-repeat; position: relative; top: 300px; z-index: 400;}
+#campaign {width: 3000px; height: 2500px; background: #f0ac1b; left: 3000px; z-index: 300;}
+#campaign .center {top: 880px; margin: 138px 0 0 -210px;}
+#campaign .border-bottom {width: 2986px; height: 515px; background:url(../img/orange-corner.gif) no-repeat 0 0; position: absolute; right:0; top: 2498px; z-index: 300;}
+#enjoy {width: 3000px; height: 2475px; background: #ee282a; top: 2475px; z-index: 200;}
+#enjoy .center {top: 975px; margin: 41px 0 0 -700px; overflow: auto;}
+#enjoy .border-right { width: 564px; height: 2479px; background: url(../img/red-corner-right.gif) no-repeat 0 0; position:absolute; left: 3000px; z-index: 200; top: -4px;}
+#record {width: 3000px; height: 2475px; background: #552e89;top: 2488px; left: 3000px; z-index: 100;}
+#record .center {top: 975px; margin: 82px 0 0 -210px; overflow: auto;}
+#home {width: 1920px; height: 600px; position: absolute; top: 2190px; left: 2033px; z-index: 500;}
+
+/* ================================================
+	MENU
+=================================================*/
+
+#menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 41px;
+	background: url(../img/bg-menu.gif) 0 0;
+	z-index: 1000;
+}
+
+#menu .center {	height: 41px;}
+
+#menu nav {
+	float: left;
+	width: auto;
+	height: auto;
+	margin-top: 11px;
+	position: relative;
+	z-index: 999;
+}
+
+#menu nav li {	list-style: none;float: left;}
+
+#menu .logo {
+	width: 181px;
+	height: 134px;
+	background: url(../img/logo-home.png);
+	margin: 4px 0 0 9px;
+	float: left;
+	position: relative;
+	z-index: 1000;
+	cursor: pointer;
+	outline: none;
+}
+
+#menu nav a {
+	display: block; 
+	border: 0; 
+	text-indent: -9999px; 
+	overflow: hidden; 
+	background-color: transparent; 
+	background-repeat: no-repeat;
+	text-align: left; 
+	direction: ltr; 
+	*line-height: 0;
+	float: left;
+}
+
+
+a.jogo {width: 57px; height: 22px; background: url(../img/menu-o-jogo.png); margin: 3px 38px 0 0;}
+a.divirta {width: 86px; height: 19px; background: url(../img/menu-divirta-se.png); margin: -1px 37px 0 0;}
+a.campanha {width: 81px; height: 23px; background: url(../img/menu-campanha.png); margin: 4px 38px 0 0;}
+a.contato {width:65px; height:13px; background: url(../img/contato.png); margin: 6px 0 0 0;}
+
+a.jogo:hover {background-position: -57px 0!important;}
+a.divirta:hover {background-position: -86px 0!important;}
+a.campanha:hover {background-position: -81px 0!important;}
+a.contato:hover {background-position: -65px 0!important;}
+
+.sub-menu-jogo {
+	bottom: -30px;
+	left: 15px;
+	position: absolute;
+	width: 415px;
+	display: none;
+}
+
+.sub-menu-divirta-se {
+	bottom: -30px;
+	left: -25px;
+	position: absolute;
+	width: 980px;
+	display: none;
+}
+
+.sub-menu-jogo li, .sub-menu-divirta-se li {float: left;}
+	
+a.entenda-jogo {width: 106px; height: 20px; background: url(../img/entenda-jogo.png);}
+a.entenda-jogo:hover {background-position: -106px 0;}
+
+a.personagens-menu {width: 88px; height: 15px; background:url(../img/personagens.png); margin: 4px 0 0 38px;}
+a.personagens-menu:hover {background-position: -88px 0;}
+
+a.historia-menu {width: 53px; height: 13px; background: url(../img/historia.png); margin: 2px 0 0 38px;}
+a.historia-menu:hover {background-position: -53px 0;}
+
+a.regras-menu {width: 44px; height: 11px; background: url(../img/regras-menu.png); margin: 5px 0 0 38px;}
+a.regras-menu:hover {background-position: -44px 0;}
+
+a.leve-com-voce {width: 94px; height: 13px; background: url(../img/leve-com-voce-menu.png); margin: 7px 0 0 39px;}
+a.leve-com-voce:hover {background-position: -94px 0;}
+
+a.video-menu {width: 39px; height: 14px; background: url(../img/video-menu.png); margin: 7px 0 0 35px;}
+a.video-menu:hover {background-position: -39px 0;}
+
+a.que-personagem {width: 171px; height: 21px; background: url(../img/que-personagem.png); margin: 5px 0 0 35px;}
+a.que-personagem:hover {background-position: -171px 0;} 
+
+a.aplicativo {width: 66px; height: 19px; background: url(../img/aplicativo.png); margin: 7px 0 0 38px;}
+a.aplicativo:hover {background-position: -66px 0;} 
+
+a.cantinho-pintura {width: 135px; height: 20px; background: url(../img/cantinho-pintura.png); margin: 6px 0 0 38px;}
+a.cantinho-pintura:hover {background-position: -135px 0;} 
+
+.visite {
+	font-family: 'PotatoCutTTRegular', sans-serif;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 100;
+	margin: 13px -120px 0 135px;
+	width: auto;
+}
+.midias {
+	font-family: 'PotatoCutTTRegular', sans-serif;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 100;
+	margin: 13px -120px 0 135px;
+	width: auto;	
+}
+.visite a img {	position: relative;	top: -2px;}
+.midias {	position: relative;}
+.midias img {position: relative;}
+
+/* ================================================
+	BOARD TRANSITIONS
+=================================================*/
+
+.board-transition {	position: absolute;	z-index: 500;}
+
+#game-transition {
+	height: 1410px;
+	width: 726px;
+	top: 942px;
+	left: 1765px;
+}
+
+#campaing-transition {
+	width: 508px;
+	height: 1065px;
+	top: 1025px;
+	left: 3688px;
+}
+
+#enjoy-transition {
+	width: 501px;
+	height: 767px;
+	left: 1785px;
+	top: 2840px;
+}
+
+#record-transition {
+	width: 581px;
+	height: 696px;
+	top: 2820px;
+	left: 3761px; 	
+}
+
+/*========================================
+	HOME SETTINGS
+========================================*/
+
+
+h1.logo-big {
+	width: 436px;
+	height: 339px;
+	background: url(../img/logo-big-home.png) 0 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -169.5px 0 0 -218px;
+	z-index: 500;
+}
+.home-jogo {
+	background: url(../img/home-jogo.gif) 0 0;
+	height: 353px;
+	left: 45px;
+	position: absolute;
+	top: 55px;
+	width: 372px;
+	z-index: 100;
+}
+#home a {outline: none!important;}
+.home-jogo:hover {background-position: -370px 8px;}
+.home-campanha {
+	width: 500px;
+	height: 270px;
+	background: url(../img/home-aplicativo.gif) 0 0;
+	position: absolute;
+	top: 70px;
+	left: 470px;
+	z-index: 100;
+}
+.home-campanha:hover {background-position: -482px 0;}
+.home-contato {
+	width: 371px;
+	height: 198px;
+	background: url(../img/home-contato.gif) 0 0;
+	position: absolute;
+	bottom: -6px;
+	right: 6px;
+	z-index: 100;
+}
+
+.home-divirta {
+	width: 494px;
+	height: 119px;
+	background: url(../img/home-divirta.gif) 0 0;
+	position: absolute;
+	bottom: 35px;
+	left: 15px;
+	z-index: 100;
+}
+
+.home-divirta:hover {background-position: -494px 0;}
+.home-contato:hover {background-position: -371px 0;}
+
+/*========================================
+	CONTAINER - THE GAME
+========================================*/
+
+#the-game h3 {
+	color: #57368c;
+	font-size: 53.28px;
+	font-family: 'PotatoCutTTRegular', sans-serif;
+	margin: 80px 0 0 59px;
+	font-weight: 100;
+	float: left;
+}
+#the-game p {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 15px;
+	color: #57368c;
+}
+#the-game p:first-letter {font-size: 23px;}
+#the-game p strong {font-weight: bold;}
+.entenda-jogo-wrapper {	width: 100%;float: left;}
+.titulo-entenda {margin: 110px 0 0 59px!important;}
+.anima-nerds {
+	width: 345px;
+	height: 186px;
+	margin: 104px 56px 0 0;
+}
+.entenda-jogo-wrapper p {
+	width: 431px;
+	float: left;
+	margin: 21px 0 0 60px;
+}
+.jogar-facil {
+	background: url(../img/bg-jogar-simples.gif) no-repeat 0 0;
+	width: 797px!important;
+	height: 205px;
+	margin: 10px 0 34px 60px;
+}
+.jogar-facil p {width: 340px;margin: 62px 0 0 409px;}
+.p-massinha {width: 509px!important;}
+.massinha {
+	width: 152px;
+	height: 145px;
+	margin-right: 114px;
+}
+#dicas {
+	width: 883px;
+	height: 438px;
+	background: url(../img/dicas-bg.gif) no-repeat 0 0;
+	float: left;
+	margin-top: 10px;
+}
+#dicas p {
+	font-family: 'PotatoCutTTRegular', sans-serif;
+	color: #fff;
+	font-size: 25px;
+	font-weight: 100;
+	position: relative;
+	line-height: 32px!important;
+	margin-top: 10px;
+}
+#dicas p:first-letter {	font-size: 59px;}
+#dicas .dica-um {
+	width: 295px;
+	height: auto;
+	top: 55px;
+	left: 110px;
+}
+#dicas .dica-dois {
+	width: 313px;
+	height: auto;
+	top: 83px;
+	left: 90px;
+}
+#dicas .dica-tres {
+	width: 322px;
+	height: auto;
+	top: 50px;
+	left: 20px;
+}
+#dicas .dica-quatro {
+	width: 424px;
+	height: auto;
+	top: 80px;
+	left: 0;
+}
+.dicas-ie {display: none;}
+#personagens-wrapper {
+	width: 99%;
+	height: 325px;
+	float: left;
+	position: relative;
+	margin-top: 20px;
+}
+#personagens-wrapper .papel-jogo h4 {
+	font-family: 'PotatoCutTTRegular', sans-serif;
+	font-size: 30px;
+	color: #57368c;	
+	font-weight: 100;
+	float: left;
+	margin: 22px 0 0 29px;
+}
+#personagens-wrapper .papel-jogo p {
+	font-size: 14px;
+	width: 200px;
+	margin: 0;
+	margin: 9px 0 0 29px;	
+}
+#personagens-wrapper .descubra-personagem {
+	font-family: 'PotatoCutTTRegular', sans-serif;
+	width: 203px;
+	height: 53px;
+	background: url(../img/descubra-personagem.gif) no-repeat 0 0;
+	color: #57368c;
+	font-size: 19.52px;
+	text-decoration: none;
+	padding: 13px 0 0 26px;
+}
+#personagens-wrapper .descubra-personagem:hover {
+	font-size: 21.39px;
+	background-position: -233px -1px;
+	padding: 9px 0 0 24px;
+}
+#menu-personagens {
+	width: 842px;
+	height: 42px;
+	background: url(../img/menu-personagens-wrapper.gif) no-repeat 0 0;
+	position: absolute;
+	top: -15px;
+	left: 50%;
+	margin-left: -421px;
+	padding-top: 13px;
+	z-index: 100;
+}
+#menu-personagens a {
+	float: left;
+	font-family: 'PotatoCutTTRegular', sans-serif;
+	font-size: 25px;
+	color: #57368c;
+	text-indent: 0;
+	text-decoration: none;
+	outline: none!important;
+}
+#menu-personagens a:hover, .active {
+	color: #fff!important;
+}
+.super-astro {margin: 0 66px 0 62px;}
+.gato-criativo {margin: 0 81px 0 0;}
+.infonauta {margin: 0 84px 0 0;}
+
+.seta-menu-personagens {
+	position: absolute;
+	top: 30px;
+	left: 88px;
+}
+#personagens-wrapper .sobre-personagem {
+	font-family: 'PotatoCutTTRegular', sans-serif;
+	font-size: 21px;
+	margin: 10px 0 0 60px;
+	line-height: 22px;
+}
+.personagens {
+	width: 100%;
+	height: 245px;
+	position: absolute;
+	overflow: hidden;
+	margin-top: 100px;
+}
+.personagens ul {
+	width: 340px;
+	height: auto;
+	padding: 0;
+	list-style: none;
+	float: left;
+}
+.personagens ul li {
+	width: 104px;
+	height: 73px;
+	background: url(../img/sprite-menu-personagens.png) no-repeat 0 0;
+	float: left;
+	font-family: 'PotatoCutTTRegular', sans-serif;
+	color: #57368c;
+	font-size: 25.79px;
+	line-height: 73px;
+	text-align: center;
+	margin: 0 8px 4px 0;
+	font-weight: 100;
+}
+.personagens .papel-jogo {
+	width: 241px;
+	height: 151px;
+	background: url(../img/bg-papel-jogo.png) no-repeat 0 0;
+}
+#super-astro .o-personagem {float: left;margin-left: 34px;}
+#super-astro .sobre-personagem {
+	width: 358px;
+	height: auto;
+	margin: 10px 0 0 30px
+}
+#super-astro ul {margin: 10px 0 0 28px;}
+#super-astro .papel-jogo  {
+	float: right;
+	margin: -40px 45px 0 0;
+}
+#personagens-wrapper .papel-jogo p:first-letter {font-size: 15px;}
+
+#personagens-wrapper .descubra-personagem {	float: right;margin: 10px 45px 0 0;}
+#gato-criativo ul {
+	position: absolute;
+	top: 55px;
+	left: 20px;
+}
+#gato-criativo ul li {
+	background: url(../img/sprite-menu-personagens.png) no-repeat -104px 0;
+	color: #fff;
+}
+#gato-criativo .o-personagem {float: left;	margin: 55px 0 0 -15px;}
+#gato-criativo .sobre-personagem {
+	width: 394px;
+	height: auto;
+	margin: 10px 0 0 30px;
+}
+
+#gato-criativo .descubra-personagem {margin: 10px 5px 0 0;}
+
+#gato-criativo .papel-jogo {float: right;margin: 0;}
+#infonauta .papel-jogo, #minhocabulario .papel-jogo {margin: 10px 0 0 10px;}
+
+#infonauta .sobre-personagem  {
+	width: 358px;
+	height: auto;
+	margin: 10px 0 0 32px;
+}
+#infonauta ul {	margin: 10px 0 0 32px;}
+
+#infonauta .descubra-personagem, #minhocabulario .descubra-personagem {
+	float: left;
+	left: 17px;
+	position: relative;
+	top: -61px;
+}
+#minhocabulario ul {margin: 5px 0 0 32px;}
+
+#infonauta ul li {
+	background: url(../img/sprite-menu-personagens.png) no-repeat 0 -73px;
+	color: #fff;
+	font-size: 25px;
+}
+#infonauta .o-personagem {
+	bottom: 48px;
+	position: absolute;
+}
+#minhocabulario .sobre-personagem  {
+	width: 354px;
+	height: auto;
+	margin: 0 0 0 32px;
+}
+#minhocabulario ul li {
+	background: url(../img/sprite-menu-personagens.png) no-repeat -104px -73px;
+	color: #fff;
+}
+#minhocabulario .o-personagem {	margin: 20px 0 0 10px;}
+#gato-criativo, #infonauta, #minhocabulario {display: none;}
+.historia {
+	font-size: 15px!important;
+	width: 711px!important;
+	height: auto;
+	color: #000!important;
+	margin-left: 30px!important;
+}
+.historia:first-letter {font-size: 15px!important;}
+#eua {
+	width: 849px;
+	height: 561px;
+	background: url(../img/eua.gif) no-repeat 0 0;	
+	margin: 10px 0 0 10px;
+	position: relative;
+}
+#eua h2 {
+	font-family: 'PotatoCutTTRegular', sans-serif;
+	color: #fff;
+	font-weight: 100;
+	font-size: 59.17px;
+	float: left;
+	margin: 28px 0 0 336px;
+	line-height: 50px;
+}
+#eua p {
+	width: 475px;
+	height: auto;
+	font-size: 15px;
+	float: left;
+	margin: 17px 0 0 335px;
+	color: #fff;
+}
+#eua p:first-letter {font-size: 15px;}
+
+.infonauta-eua {
+	width: 643px;
+	height: 227px;
+	float: right;
+	margin: 68px 15px 0 0;
+}
+
+.infonauta-eua p {
+	font-size: 15px;
+	height: auto;
+	color: #013356!important;
+	width: 445px!important;
+	margin: 27px 0 0 20px!important; 
+}
+
+#eua span {
+	font-family: 'PotatoCutTTRegular', sans-serif;
+	color: #fff;
+	font-size: 19.11px;
+	position: absolute;
+	bottom: 50px;
+	left: 198px;
+	font-weight: 100;
+}
+
+#internacional {
+	position: relative;
+	width: 100%;
+	height: auto;
+	float: left;
+}
+#internacional h3 {	margin: 76px 0 0 0;}
+
+.anima-gato-word {
+	width: 381px;
+	height: 239px;
+	margin: 45px 46px 0 0;
+}
+#gato-mundo-p {
+	font-family: 'PotatoCutTTRegular', sans-serif!important;
+	color: #57368c;
+	font-weight: 100!important;
+	text-align: center;
+	width: 367px;
+	height: auto;
+	font-size: 21px!important;
+	position: absolute;
+	bottom: 0;
+	right: 45px;
+	line-height: 24px;
+}
+.internacional {
+	height: auto;
+	color: #000!important;
+	width: 403px;
+	margin: 0!important;
+}
+.internacional:first-letter {font-size: 15px!important;}
+.segredo {
+	font-size: 25px;
+	color: #57368c;
+	font-family: 'PotatoCutTTRegular', sans-serif;
+	font-weight: 100;
+	margin: 19px 0;
+}
+
+img.regras {
+	width: 341px;
+	height: 132px;
+	margin: 58px 0 0 0;
+}
+p.regras {
+	color: #fff!important;
+	font-size: 16px!important;
+	float: left;
+	margin: 0;
+}
+p.regras:first-letter {	font-size: 16px!important;}
+#boxregras {
+	background-image: url("../img/bg_regras.gif");
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    height: 490px;
+    margin-top: 40px;
+    padding-top: 150px;
+}
+#regra-um {
+	color: #57368c!important;
+	width: 583px;
+	height: 74px;
+	padding: 24px 0 0 22px;
+	margin: 13px 0 8px 0; 	
+}
+#regra-dois {
+	width: 487px;
+	height: 54px;
+	padding: 25px 0 0 22px;
+}
+#regra-tres {
+	width: 701px;
+	height: 46px;
+	padding: 84px 0 0 25px;
+	margin-top: -71px;
+}
+#regra-quatro {
+	width: 735px;
+	height: 57px;
+	padding: 20px 0 0 19px;
+	margin-bottom: -7px;
+}
+#regra-cinco {
+	width: 616px;
+	height: 56px;
+	padding: 20px 0 0 19px;
+}
+#regra-seis {
+	width: 741px;
+	height: 76px;
+	padding: 96px 0 0 19px;
+	margin-top: -89px;
+}
+.video-bg {	margin: 30px 0;}
+.bt-regas {
+	width: 271px;
+	height: 256px;
+	background: url(../img/bt-baixar-regras.gif);
+	margin: 56px 0 0 20px; 
+}
+.bt-regas:hover {background-position: -271px 0;}
+
+
+/*========================================
+	CONTAINER - CAMPANHA
+========================================*/
+
+#campaign  {font-family: 'PotatoCutTTRegular', sans-serif; }
+.campanha-wrapper {
+	width: 100%;
+	height: 462px;
+	float: left;
+	position: relative;
+	top: -100px;
+}
+.tv {
+	width: 402px;
+	height: 348px;
+	float: left;
+	margin: -37px 0 0 165px;
+	position: relative;
+	z-index: 0;
+}
+.campanha-wrapper h3 {
+	font-size: 53.28px;
+	color: #fff;
+	font-weight: 100;
+	text-transform: uppercase;
+	float: left;
+	margin: 97px 0 0 56px;
+}
+.campanha-wrapper p {
+	font-size: 24px;
+	color: #59378b;
+	width: 247px;
+	height: auto;
+	float: left;
+	margin: 13px 0 0 56px;
+	line-height: 28px;	
+}
+.anima-sofa {
+	margin: 10px 0 0 10px;
+}
+.novidades {
+	width: 307px;
+	height: 252px;
+	background: url(../img/bg-novidades.gif) no-repeat 0 0;
+	float: right;
+	margin-right: 10px;
+}
+.novidades h3 {
+	font-size: 53.28px;
+	color: #fff;
+	text-transform: lowercase;
+	margin: 28px 0 0 33px;
+}
+.novidades p {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 16px;
+	width: 217px;
+	height: auto;
+	margin: 10px 0 10px 33px;
+	line-height: 21px;
+}
+.novidades p strong {font-style: italic;}
+.video-campanha {
+	left: 187px;
+	position: absolute;
+	top: 86px;
+	z-index: 100;
+}
+
+/*========================================
+	CONTAINER - CONTATO
+========================================*/
+
+#record .center {font-family: 'PotatoCutTTRegular', sans-serif; }
+#record h3 {
+	font-size: 45px;
+	color: #552e89;
+	float: left;
+}
+.contato-wrapper {	width: 100%;float: left;}	
+.onde-comprar-wrapper {
+	width: 458px;
+	height: auto;
+	color: #fff;
+	font-size: 21px;
+}
+.anima-gato-criativo {
+	width: 350px;
+	height: 282px;
+	margin-left: 70px;
+	position: relative;
+	z-index: 100;
+	margin-top: 120px;
+}
+.onde-comprar {
+	width: 333px;
+	height: 198px;
+	background: url(../img/bg-onde-comprar.png) no-repeat 0 0;
+	margin: -25px 0 0 70px;
+}
+.onde-comprar h3 {	margin: 44px 0 0 30px;}
+.onde-comprar p {
+	width: 268px;
+	height: auto;
+	float: left;
+	margin: 0 0 0 30px;
+	line-height: 25px;
+}
+.onde-comprar p a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+.onde-comprar p a:hover {color: #552e89;}
+.redes {
+	width: 331px;
+	height: 272px;
+	background: url(../img/bg-redes.png) no-repeat 0 0;
+	margin: 0 0 0 70px;
+}
+.redes h3 {	margin: 35px 0 0 30px;}
+.redes p {
+	width: 290px;
+	height: auto;
+	float: left;
+	margin: 0 0 0 30px;
+	line-height: 25px;
+}
+.redes .bt-face {
+	width: 107px;
+	height: 64px;
+	background: url(../img/bt-facebook.gif);
+	margin: 13px 0 0 40px;
+}
+.redes .bt-face:hover {	background-position: -107px 0;}
+.redes .bt-twitter {
+	width: 115px;
+	height: 63px;
+	background: url(../img/bt-twitter.gif);
+	margin: 13px 40px 0 0;
+}
+.redes .bt-twitter:hover {	background-position: -115px 0;}
+.fale-conosco-wrapper {	width: 429px;height: auto;}
+.fale-conosco-wrapper h2 {
+	font-size: 53.28px;
+	color: #fff;
+	background: transparent;
+	width: auto;
+	height: auto;
+	font-weight: 100;
+	text-transform: uppercase;
+	float: left;
+	margin: 100px 0 10px 10px;
+}
+.fale-conosco-wrapper h4 {
+	font-size: 27px;
+	color: #fdea05;
+	font-weight: 100;
+	float: left;
+	margin-left: 10px;
+}
+.fale-conosco-wrapper p {
+	font-size: 19px;
+	color: #fdea05;
+	float: left;
+	width: 377px;
+	margin: 20px 0 0 10px;
+}
+.fale-conosco-wrapper form {
+	width: 375px;
+	height: auto;
+	float: left;
+	font-family: Verdana, Geneva, sans-serif;
+	color: #fff;
+	font-size: 11px;
+	margin: 30px 0 0 10px;
+}
+.fale-conosco-wrapper label {
+	width: 100%;
+	float: left;
+}
+.fale-conosco-wrapper input {
+	width: 252px;
+	height: 27px;
+	vertical-align: middle;
+	float: left;
+	color: #000;
+	padding-left: 9px;
+	margin-bottom: 20px;
+}
+.fale-conosco-wrapper .radio {
+	width: 20px;
+	height: 20px;
+	font-family: Verdana, Geneva, sans-serif;
+	color: #fff;
+	font-size: 11px;
+	margin-top: 0;
+}
+.fale-conosco-wrapper p.radio {	margin: 2px 6px 0 0;}
+.fale-conosco-wrapper textarea {
+	width: 366px;
+	height: 123px;
+	overflow-y: scroll;
+	resize: none;
+}
+.fale-conosco-wrapper button {
+	width: 58px;
+	height: 22px;
+	float: right;
+	margin: 14px 17px 0 0;
+}
+.fale-conosco-wrapper .error {
+	color: #fdea05;
+	font-size: 11px;
+	font-family: Verdana, Geneva, sans-serif;
+	float: right;
+	width: 65%;
+	position: relative;
+	top: -2px;
+}
+.seta {
+	width: 101px;
+	height: 48px;
+	float: left;
+	margin: 35px 0 0 10px;
+}
+.fale-conosco-wrapper strong {
+	font-size: 21px;
+	color: #fdea05;
+	float: right;
+	width: 221px;
+	height: auto;
+	font-weight: 100;
+	margin: 35px 60px 0 0;
+}
+div.fale-conosco-sucess{
+	margin-top:150px;
+	margin-bottom:150px;
+	font-size:15px;
+}
+
+/*========================================
+	CONTAINER - DIVIRTA-SE
+========================================*/
+
+#enjoy {font-family: 'PotatoCutTTRegular', sans-serif; }
+#enjoy h3 {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 100;
+	float: left;
+}
+#enjoy p {
+	font-family: Verdana, Geneva, sans-serif;
+	height: auto;
+	font-size: 15px;
+	color: #fff;
+	margin: 11px 0;
+}
+.anima-teatro {
+	height: 368px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 561px;
+	margin-top: 125px;
+}
+.divirta-se {
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.divirta-se h3 {
+	font-size: 83.25px;
+	margin-top: 192px;
+	margin-left: 10px;
+}
+.divirta-se p {
+	width: 310px;
+	margin-left: 10px;
+	position: relative;
+	left: 10px;
+}
+.que-personagem h3 {
+	font-size: 59.88px;
+	margin: 30px 0 0 0;
+	width: 100%;
+}
+.que-personagem p {
+	width: 695px;
+	font-size: 15px;
+	margin: 20px 0 0 10px!important;
+	position: relative;
+	float: left;
+}
+.que-pesonagem-wrapper {
+	width: 892px;
+	height: 440px;
+	float: left;
+	margin: 27px 0;
+}
+.aplicativo {
+	width: 870px;
+	height: 400px;
+	position: relative;
+	margin-top: 40px;
+}
+.aplicativo .anima-aplicativo {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 100;
+}
+.aplicativo h3 {
+	position: absolute;
+	z-index: 200;
+	width: auto;
+	right: 0;
+}
+.aplicativo p {
+	width: 267px;
+	height: auto;
+	font-size: 15px;
+	position: absolute;
+	right: 0;
+	top: 190px;
+}
+.jogue-agora {
+	width: 207px;
+	height: 82px;
+	background: url(../img/jogue-agora.gif);
+	position: absolute;
+	right: 57px;
+	bottom: 40px;
+	z-index: 300;
+}
+.jogue-agora:hover {background-position: -207px 0;}	
+.leve-voce h3 {	font-size: 56.81px;	margin-left: 10px;}
+
+.leve-voce p {
+	width: 390px;
+	height: auto;
+	position: relative;
+	left: 10px;
+}
+.leve-voce {
+	width: 100%;
+	height: auto;
+	position: relative;
+	margin-top: 40px;	
+}
+.familia {
+	width: 870px;
+	height: 380px;
+	position: relative;
+	margin-top: 20px;
+}
+.familia h3 {
+	position: absolute;
+	z-index: 200;
+	width: auto;
+	right: 10px;
+}
+.familia .convidar {
+	width: 191px;
+	height: 70px;
+	background: url(../img/convidar.gif);
+	position: absolute;
+	bottom: 95px;
+	right: 30px;
+}
+.familia .convidar:hover {	background-position: -191px 0;}
+
+.pintura h3 {font-size: 59.17px;width: 100%;}
+
+.pintura-wrapper {
+	width: 873px;
+	height: 440px;
+	float: left;
+	margin: 0;
+	background: transparent;
+}
+
+.tabuleiro {
+	width: 443px;
+	height: 271px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+.wallpaper-wrapper {
+	width: 441px;
+	height: 544px;
+	background: url(../img/bg-wallpapers.gif) no-repeat 0 0;
+	margin-left: -10px;
+}
+.wallpaper-wrapper h2 {
+	font-size: 41.88px;
+	color: #fff;
+	margin: 34px 0 0 122px;
+	font-weight: 100;
+}
+.wallpapers {
+	width: 85px;
+	height: auto;
+	float: left;
+	margin: 15px -38px 0 45px;
+}
+.wall-link {
+	color: #fff !important;
+	float: left;
+	font-family: 'PotatoCutTTRegular',sans-serif;
+	font-size: 16.1px;
+	margin: 7px auto -4px;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+}
+.wall-link:hover {	color: #2f2957!important;}
+.gifts-wrapper h2 {
+	font-size: 41.88px;
+	color: #fff;
+	margin: 20px 0 0 112px;
+	font-weight: 100;
+	line-height: 32px;
+}
+.gifts {
+	float: left;
+	width: 68px;
+	height: 91px;
+	background:url(../img/sprite-gifts.gif) 0 0;
+	margin: 14px -45px 0 61px;
+}
+#gift-um:hover {background-position: -68px 0;}
+#gift-dois {background-position: 0 -91px;}
+#gift-dois:hover {background-position: -68px -91px;}
+#gift-tres {background-position: 0 -182px;}
+#gift-tres:hover {background-position: -68px -182px;}
+#gift-quatro {background-position: 0 -273px;}
+#gift-quatro:hover {background-position: -68px -273px;}
+.timeline {
+	width: 418px;
+	height: 362px;
+	background: url(../img/bg-timeline-face.gif) no-repeat 0 0;
+	position: absolute;
+	bottom: 9px;
+	right: 5px;
+	padding-left: 50px;
+}
+.timeline h2 {
+	margin: 25px 0 15px 50px;
+	font-size: 41.88px;
+	color: #fff;
+	font-weight: 100;
+}
+#enjoy .envie-video {
+	width: 900px;
+	height: 305px;
+	background: url(../img/envie-video-bg.png) no-repeat 0 0; 
+	float: left;
+	margin: 40px 0 0 -10px;
+	position: relative;
+}
+.envie-video p {
+	font-family: 'PotatoCutTTRegular', sans-serif!important;
+	width: 323px;
+	height: auto;
+	font-size: 29px!important;
+	color: #fff; 
+	font-weight: 100;
+	margin: 77px 0 0 72px!important;
+	line-height: 33px;
+}
+.envie-video p strong {
+	font-size: 39px;
+	font-weight: 100;
+}
+
+.envie-video-anima-text {
+	font-size: 50.72px!important;
+	color: #fff!important;
+	text-decoration: none;
+	margin-left: 72px;
+}
+.envie-video-anima-text:hover {	color: #fffc00!important;}
+.envie-video-anima {
+	width: 426px;
+	height: 182px;
+	background: url(../img/envie-video-anima.gif);
+	position: absolute;
+	top: 58px;
+	right: 47px;
+}
+.envie-video-anima:hover {	background-position: -428px 0;}
+.timelines {
+	float: left;
+	width: 168px;
+	height: 115px;
+	background:url(../img/sprite-timeline.gif) 0 0;
+	margin: 0 0 15px 15px; 
+}
+
+#timeline-um:hover {background-position: -168px 0;}
+#timeline-dois {background-position: 0 -115px;}
+#timeline-dois:hover {background-position: -168px -115px;}
+#timeline-tres {background-position: 0 -230px;}
+#timeline-tres:hover {background-position: -168px -230px;}
+#timeline-quatro {background-position: 0 -345px;}
+#timeline-quatro:hover {background-position: -168px -345px;}     
+
+/*========================================
+	JOGOU | FILMOU
+========================================*/
+
+#jogou-filmou {
+	width: 100%;
+	height: 100%;
+	background: #552e89;
+}
+
+#jogou-filmou h1 {
+	font-family: 'PotatoCutTTRegular', sans-serif;
+	font-size: 45.28px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 100;
+	margin: 55px 0 0 275px;
+}
+#jogou-filmou h4 {
+	font-family: 'PotatoCutTTRegular', sans-serif;
+	font-size: 27px;
+	color: #fdea05;
+	margin: 0 0 34px 326px;
+	font-weight: 100;		
+}
+#jogou-filmou form {
+	width: 368px;
+	height: auto;
+	margin: 0 auto;
+	font-family: Verdana, Geneva, sans-serif;
+}
+#jogou-filmou form label {
+	font-size: 11px;
+	color: #fff;
+	width: 100%;
+	float: left;
+	margin-bottom: 2px;
+}
+#jogou-filmou form input {
+	background: #fff;
+	width: 251px;
+	height: 27px;
+	vertical-align: middle;
+	padding-left: 9px;
+	color: #000;
+	margin-bottom: 20px;
+	float: left;
+}
+#jogou-filmou form input[name=arquivo] {margin-bottom: 2px;}
+#jogou-filmou form input.chek {
+	height: 20px;
+	left: -322px;
+	position: relative;
+	top: 57px;
+	width: 20px;
+}
+#jogou-filmou form label.chek {
+	margin-top: 20px;
+	position: relative;
+	left: 28px;
+}
+#jogou-filmou form p {
+	float: left;
+	font-size: 11px;
+	color: #fff;
+}
+#jogou-filmou form span {
+	float: left;
+	color: #fdea05;
+	font-style: italic;
+	font-size: 11px;
+}
+#jogou-filmou form button {
+	width: 75px;
+	height: 22px;
+	text-align: center;
+	vertical-align: middle;
+	float: right;
+	font-size: 12px;
+	margin-top:20px;
+}
+.dados {margin: -20px 0 21px 0!important;}
+
+#jogou-filmou form a {
+	font-size: 11px;
+	color: #fff;
+	text-decoration: underline;
+	font-weight: bold;
+	font-style: italic;
+}
+
+#jogou-filmou form .ou {
+	left: -260px;
+	top: 15px;	
+}
+.video-enviado {
+	width: 470px;
+	height: 242px;
+	background: url(../img/video-enviado.png) no-repeat 0 0;
+	float: left;
+	margin: 52px 0 0 223px;
+	font-family: 'PotatoCutTTRegular', sans-serif;
+	font-weight: 100;
+}
+.video-enviado h2, .erro h2 {
+	font-size: 45.28px;
+	text-transform: uppercase;
+	color: #fff;
+	float: left;
+	margin: 77px 0 0 96px;
+	font-weight: 100;
+	line-height: 50px;
+}
+.video-enviado p, .erro p {
+	float: left;
+	font-size: 27px;
+	color: #fff;
+	text-align: center;
+	margin-left: 87px;
+	font-weight: 100;
+	line-height: 27px;
+}
+.agradecemos {
+	font-family: 'PotatoCutTTRegular', sans-serif;
+	font-weight: 100;
+	width: 372px;
+	height: 169px;
+	background: url(../img/bg-agradecemos.png) no-repeat 0 0;
+	float: left;
+	color: #552e89;
+	margin: 25px 0 0 260px;
+}
+.agradecemos p {
+	font-size: 31px;
+	float: left;
+	margin: 58px 0 0 40px;
+	line-height: 31px;
+}
+.agradecemos p strong {
+	font-size: 27px;
+	text-transform: uppercase;
+	font-weight: 100;
+}
+
+.agradecemos img {
+	float: right;
+	margin: 25px 39px 0 0;
+}
+.erro {
+	width: 462px;
+	height: 238px;
+	background: url(../img/bg-erro.png) no-repeat 0 0;
+	float: left;
+	font-family: 'PotatoCutTTRegular', sans-serif;
+	font-weight: 100;
+	margin: 52px 0 0 218px;
+}
+.voltar-form {
+	width: 365px;
+	height: 167px;
+	background: url(../img/bt-voltar-form.png);
+	float: left;
+	margin: 30px 0 0 260px;
+}
+.voltar-form:hover {background-position: -365px 0;}
+.sucess {margin: -30px 0 0 0;}
+.sucess, .error {display: none;}
+#politica {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: url(../img/bg-politica.png) repeat;
+	display: none;
+}
+#politica .center {
+	height: 580px;
+	margin: 30px 0 0 -255px;
+	overflow: auto;
+	padding-top: 20px;
+	width: 510px;
+}
+.bt-voltar-politica {
+	width: 120px;
+	height: 49px;
+	background: url(../img/bt-voltar-politica.png);	
+	margin: 0 20px 0 0;
+}
+#politica .center h1 {
+	font-size: 43.28px;
+	width: 100%;
+	margin: 25px 0 25px 0;
+	float: left;
+}
+#politica .center p {
+	font-family: Verdana, Geneva, sans-serif;
+	width: 444px;
+	height: auto;
+	margin: 10px;
+	color: #fff!important;
+	float: left;
+	font-size: 12px;
+}
+#jf .alert {color: #FDEA05;}
+
+div#wrapper_convite{
+	position:relative;
+	padding-top:80px;
+	margin:0 auto;
+	width:820px;
+}
+div#wrapper_convite div#title{
+	padding-bottom:60px;
+	text-align: center;
+}
+			
+div#wrapper_convite div#img{
+	float:left;
+}
+			
+div#wrapper_convite div#form_convite{
+	width:320px;
+	float:right;
+}
+div#wrapper_convite a.enviar{
+    display:block;
+    text-indent:-99999px;
+    background-image:url(../convite/imgs/bt_enviar.png);
+    width:191px;
+    height:68px;
+    margin-left: 115px;
+}
+div#wrapper_convite input.small {  width: 140px;}
+div#wrapper_convite input, div#wrapper_convite textarea {
+    color: #003300;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-shadow: none;
+    width: 300px;
+}
+div#wrapper_convite .blocoInput2 {
+    margin-left: 20px;
+}
+
+div#wrapper_convite .blocoInput, .blocoInput2 {
+    float: left;
+    width: 140px;
+}
+
+div#wrapper_convite * {
+    font-family: 'Gill Sans Infant W01';
+    text-shadow: 1px 1px 0 #003300;
+}
+
+div#wrapper_convite .big {
+    font-size: 28px;
+}
+
+div#wrapper_convite label {
+    font-size: 20px;
+    color:#FFF;
+}
+
+div#wrapper_convite textarea{
+    width:305px;
+    resize:none;	
+}
+div#wrapper_convite p.aviso{
+    color: #FFFFFF;
+    font-family: verdana,tahoma;
+    font-size: 11px;
+    margin-top: -4px;
+}
+div#wrapper_convite p.alert{
+    display: block;
+    padding: 10px 22px 10px 10px;
+    text-align: right;
+    width: 285px;
+    color:#FFF;
+}
+div#wrapper_convite div#sucesso{
+    color: #FFFFFF;
+    font-size: 20px;
+    text-align: center;
+    display:none;
+}
+
+	
+/*========================================
+	MEDIA QUERIES
+========================================*/
+/*@media only screen and (min-width: 35em) {}*/
+.center{ width: 920px; height: 600px; position: absolute; left: 50%; margin: 0 0 0 -455px; /*border: 1px solid cyan;*/}
+.left {float: left;} 
+.right {float: right;}
+.ir { display: block; border: 0; text-indent: -9999px; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
+
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+
+.jspContainer
+{
+	overflow: hidden;
+	position: relative;
+}
+
+.jspPane
+{
+	position: absolute;
+}
+
+.jspVerticalBar
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 16px;
+	height: 100%;
+	background: red;
+}
+
+.jspHorizontalBar
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 16px;
+	background: red;
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar *
+{
+	margin: 0;
+	padding: 0;
+}
+.jspCap{display: none;}
+.jspHorizontalBar .jspCap{float: left;}
+
+.jspTrack
+{
+	background: #dde;
+	position: relative;
+}
+
+.jspDrag
+{
+	background: #bbd;
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+
+}
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+{
+	float: left;
+	height: 100%;
+}
+
+.jspArrow
+{
+	background: #50506d;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+}
+
+.jspArrow.jspDisabled{	cursor: default;background: #80808d;}
+
+.jspVerticalBar .jspArrow{height: 16px;}
+
+.jspHorizontalBar .jspArrow
+{
+	width: 16px;
+	float: left;
+	height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus{outline: none;}
+
+.jspCorner
+{
+	background: #eeeef4;
+	float: left;
+	height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner{	margin: 0 -3px 0 0;}
+.scroll1 .jspTrack {	background:#cae426;}
+.scroll1 .jspDrag {	background:#adc038;}
+.scroll2 .jspTrack {background:#fc4244;}
+.scroll2 .jspDrag {	background:#d62123;}
+.scroll4 .jspTrack {background:#5f329b;}
+.scroll4 .jspDrag {	background:#4a2082;}
+
+
+
+/* QUIZ CSS */
+#quiz {
+	background-image: url(../quiz/img/quiz/bg.jpg);
+	width:892px;
+	height:440px;
+	overflow:hidden;
+	float:left;
+}
+#quiz #container {
+	width:10736px;
+	float:left;
+	height:440px;
+}
+#quiz .box {
+	width:892px;
+	float:left;
+	height:440px;
+}
+#quiz .box .pergunta {
+		background-image: url(../quiz/img/quiz/bg_question.gif);
+		background-repeat:no-repeat;
+		background-position:0px 60px;
+		width:515px;
+		margin:0 auto;
+		height:440px;
+}
+
+#quiz .box .pergunta .box_perguntas {	height:140px;}
+#quiz .box .pergunta p {
+    font-size:11px;
+    font-family:Verdana, Geneva, sans-serif;
+    color:#4c1d1e;
+    margin:15px 0 15px 120px!important;
+    width:300px;
+    float: none!important;
+}
+#quiz .box .pergunta p input {
+    float:left; margin-right:10px;
+    margin-bottom:10px;
+}
+#quiz .box .pergunta p.questao {
+    font-family: 'PotatoCutTTRegular', sans-serif;
+    color: #fff;
+    font-size: 36px;
+    font-weight: 100;
+    margin: 60px auto!important;
+    text-align:center;
+    width:515px;
+    text-transform:uppercase;
+    float: none!important;
+}
+
+#quiz .fix { line-height:40px; margin-bottom:40px !important; }
+
+#quiz .box .pergunta a {
+    display:block;
+    width:120px;
+    height:43px;
+    background-repeat:no-repeat;
+    text-indent:-99999px;
+    margin-left:300px;
+}
+#quiz .box .pergunta a:hover { background-position:0px -43px; }
+#quiz .box .pergunta a.prox { background-image:url(../quiz/img/quiz/bt_proxima.gif); }		
+#quiz .box .pergunta a.result { background-image:url(../quiz/img/quiz/bt_resultado.gif); }
+#quiz .box .resultado {
+    width:892px;
+    height:440px;
+    background-image:url(../quiz/img/quiz/bg_laranja.gif);
+    background-repeat:no-repeat;
+    background-position:190px 50px;
+}
+#quiz .box .resultado p.nome { color:#4c1d1e; font-size:52px; font-family: 'PotatoCutTTRegular', sans-serif; margin:80px 0 0 280px!important; width:620px; float:left; text-transform:uppercase; }
+
+#quiz .box .resultado p.descricao { color:#4c1d1e; font-size:14px; font-family:Verdana, Geneva, sans-serif; float:left; width:390px; line-height:22px; margin-top:10px; }
+#quiz .box .resultado img { float:left; }
+#quiz .box .resultado img#gato { margin:5px 35px; }
+#quiz .box .resultado img#minho { margin:-5px 35px 0px 200px; }
+#quiz .box .resultado img#info { margin:-8px 35px 0px 115px; }
+#quiz .box .resultado img#star { margin:0px 65px 0px 70px; }
+#quiz #q4 .questao {
+	margin: 60px auto 0 auto !important;
+}

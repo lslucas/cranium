@@ -1,0 +1,22 @@
+html.ie-7, .ie-7 body {overflow: hidden;}
+.ie-7 .entenda-jogo-wrapper {width: 98%; float: left;}
+.ie-7 #personagens-wrapper {width: 98%;}
+.ie-7 #minhocabulario .o-personagem {margin-top: -45px;}
+.ie-7 #infonauta .o-personagem {left: 650px;}
+.ie-7 #gato-mundo-p {bottom: -20px;}
+.ie-7 #dicas {display: none;}
+.ie-7 .dicas-ie {display: block;width: 883px;height: 438px;float: left;}
+.ie-7 #enjoy h3 {float: right; width: 270px; line-height: 65px;}
+.ie-7 .divirta-se {width: 880px;}
+.ie-7 .leve-voce {width: 880px;	}
+.ie-7 .timeline { width: 413px;right: -9px;}
+.ie-7 .tabuleiro {right: -2px;}
+.ie-7 .novidades {margin-top: -260px;}
+.ie-7 .tv {float: none; left: 165px;}
+.ie-7 .midias {top: 4px;}
+.ie9 #gato-mundo-p {bottom: -15px;}
+.ie9 #main {margin-top: -15px;}
+.ie-7 .que-personagem h3 {margin-top: 60px;}
+.ie-7 .leve-voce h3 {margin-top: 5px;}
+.lt-ie9 .que-personagem h3 {margin-top: 60px;}
+.lt-ie9 .leve-voce h3 {margin-top: 5px;}

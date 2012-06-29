@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+
+body 
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+html, body 
+{
+	height: 100%;
+} 
+
+* html
+{
+	height: 100%;
+}
+
+
+
+
+
+
+
+
+
+#wrap
+{
+	position: relative;
+	width: 1000px;
+	height: 720px;
+	left: 50%;
+	margin-left: -500px;
+	top: 50px;
+	background: url(../image/bg.jpg) no-repeat;
+}
+
+
+
+
+
+
+
+.campo
+{
+	height: 18px;
+	margin: 0px;
+	border: 0px none;
+	background: transparent;
+	
+	color: #306;
+}
+
+#camposHolder
+{
+	position: relative;
+	float: left;
+	width: 740px;
+	height: auto;
+	top: 436px;
+	left: 165px;
+}
+
+#nome
+{
+	position: absolute;
+	float: left;
+	width: 402px;
+}
+
+#email
+{
+	position: absolute;
+	float: left;
+	width: 250px;
+	left: 478px;
+}
+
+#endereco
+{
+	position: absolute;
+	float: left;
+	width: 334px;
+	top: 34px;
+}
+
+#numero
+{
+	position: absolute;
+	float: left;
+	width: 64px;
+	top: 34px;
+	left: 414px;
+}
+
+#complemento
+{
+	position: absolute;
+	float: left;
+	width: 100px;
+	top: 34px;
+	left: 630px;
+}
+
+#bairro
+{
+	position: absolute;
+	float: left;
+	width: 192px;
+	top: 68px;
+}
+
+#cidade
+{
+	position: absolute;
+	float: left;
+	width: 139px;
+	top: 68px;
+	left: 265px;
+}
+
+#estado
+{
+	position: absolute;
+	float: left;
+	width: 55px;
+	top: 68px;
+	left: 493px;
+}
+
+#cep
+{
+	position: absolute;
+	float: left;
+	width: 100px;
+	top: 68px;
+	left: 630px;
+}
+
+#cpf
+{
+	position: absolute;
+	float: left;
+	width: 160px;
+	top: 102px;
+}
+
+#rg
+{
+	position: absolute;
+	float: left;
+	width: 127px;
+	top: 102px;
+	left: 202px;
+}
+
+#tel
+{
+	position: absolute;
+	float: left;
+	width: 127px;
+	top: 102px;
+	left: 403px;
+}
+
+#cel
+{
+	position: absolute;
+	float: left;
+	width: 130px;
+	top: 102px;
+	left: 604px;
+}
+
+
+
+
+
+#check1
+{
+	position: absolute;
+	float: left;
+	width: 130px;
+	top: 133px;
+	left: 110px;
+}
+
+#check2
+{
+	position: absolute;
+	float: left;
+	width: 130px;
+	top: 155px;
+	left: 110px;
+}
+
+
+
+
+
+
+#btnEnviar
+{
+	position: absolute;
+	float: left;
+	width: 146px;
+	height: 53px;
+	top: 170px;
+	left: 300px;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
